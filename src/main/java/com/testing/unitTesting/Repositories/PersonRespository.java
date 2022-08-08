@@ -8,5 +8,6 @@ import com.testing.unitTesting.Entities.Person;
 
 @Repository
 public interface PersonRespository extends JpaRepository<Person, Long> {
-
+	
+	public boolean existsPersonById(Long id);
 }

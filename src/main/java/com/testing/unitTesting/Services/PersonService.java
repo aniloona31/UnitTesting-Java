@@ -21,4 +21,11 @@ public class PersonService {
 			throw new RuntimeException("data not found");
 		}
 	}
+	
+	
+	//to get reference of mock repo while testing
+	public PersonService(PersonRespository personRepository) {
+		// TODO Auto-generated constructor stub
+		this.personRepository = personRepository;
+	}
 }
